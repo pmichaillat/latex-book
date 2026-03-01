@@ -1,0 +1,139 @@
+Lists are not very common in scientific papers, but they are sometimes useful.\footnote{Itemize and enumerate are formatted by the template with indentation and custom labels; see the style file.} This chapter presents a few possible lists.
+
+\section{Itemized lists}\label{s:lists}
+
+Here is an itemized list with two levels:
+\begin{itemize}
+\item Et harum quidem rerum facilis est et expedita distinctio.
+\item Nam libero tempore, cum soluta nobis est eligendi optio.
+\item Emporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Nam libero tempore, cum soluta nobis est eligendi optio:
+\begin{itemize}
+\item Cumque nihil impedit
+\item Quo minus id, quod maxime placeat
+\item Facere possimus, omnis voluptas assumenda est
+\end{itemize}
+\item Et harum quidem rerum facilis est et expedita distinctio.
+\item Nam libero tempore, cum soluta nobis est eligendi optio.
+\end{itemize}
+
+\section{Nnumbered lists}\label{s:numberedlists}
+
+And here is a numbered lists with two levels:
+\begin{enumerate}
+\item Et harum quidem rerum facilis est et expedita distinctio.
+\item Nam libero tempore, cum soluta nobis est eligendi optio.
+\item Emporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet. Nam libero tempore, cum soluta nobis est eligendi optio:
+\begin{enumerate}
+	\item Cumque nihil impedit.
+	\item Quo minus id, quod maxime placeat.
+	\item Facere possimus, omnis voluptas assumenda est.
+\end{enumerate}
+\item Et harum quidem rerum facilis est et expedita distinctio.
+\item Nam libero tempore, cum soluta nobis est eligendi optio.
+\end{enumerate}
+Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
+
+\section{Figures and graphs}\label{s:graphs}
+
+Here is a section with a variety of graphs.\footnote{At vero eos et accusamus\index{accusamus} et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident.} At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. 
+
+\subsection{Graphs at the top of the page}
+
+A simple two-panel graph is on figure \ref{f:graph1}. It will be placed at the top of the page, just about here. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor\index{dolor} repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.
+
+\begin{figure}[t]
+\subcaptionbox{First panel\label{f:panel1}}{\includegraphics[scale=0.2,page=1]{\pdf}}\hfill
+\subcaptionbox{Second panel\label{f:panel2}}{\includegraphics[scale=0.2,page=2]{\pdf}}
+\caption{Figure with two panels}
+\note{This is a note for the graph. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus.}
+\label{f:graph1}\end{figure}
+
+\subsection{References to figures and panels} 
+
+As usual with LaTeX, it is easy to refer to a figure: see figure \ref{f:graph1}. It is possible to refer to a specific panel in a figure, for instance figure \ref{f:panel1} or figure \ref{f:panel2}. Its also possible to refer to the entire figure, for instance figure \ref{f:graph1} or figure \ref{f:graph2}. Sed do eiusmod\index{eiusmod} tempor incididunt ut labore et dolore magna aliqua. 
+
+\subsection{A full-page figure}
+
+Here is a full-page figure (figure \ref{f:graph2}). It will be placed in a full page about here.
+
+\begin{figure}[p]
+\subcaptionbox{First panel}{\includegraphics[scale=0.2,page=3]{\pdf}}\hfill
+\subcaptionbox{Second panel}{\includegraphics[scale=0.2,page=4]{\pdf}}\\
+\subcaptionbox{Third panel}{\includegraphics[scale=0.2,page=5]{\pdf}}\hfill
+\subcaptionbox{Fourth panel}{\includegraphics[scale=0.2,page=6]{\pdf}}\\
+\subcaptionbox{Fifth panel}{\includegraphics[scale=0.2,page=7]{\pdf}}\hfill
+\subcaptionbox{Sixth panel}{\includegraphics[scale=0.2,page=8]{\pdf}}
+\caption{Figure with six panels}
+\note[Note]{Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Aenean fermentum purus id lacus volutpat, a eleifend mi posuere! Mauris nec nunc commodo, vehicula enim nec; vehicula ex. Nullam euismod lorem at eros efficitur: ut ultricies ante fringilla? Nam sagittis sapien id tortor commodo—a pulvinar velit ultricies. Integer ac magna velorci mollis vestibulum. Fusce id ipsum vel magna placerat vehicula. Curabitur ac lobortis justo.}
+\label{f:graph2}\end{figure}
+
+At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
+
+\section{A simple table}
+
+Table \ref{t:table1} is a simple table with one panel. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
+
+\begin{table}[t]
+\caption{Basic table with one panel and multicolumns}
+\begin{tabular*}{\textwidth}[]{p{4cm}@{\extracolsep\fill}cccc}
+\toprule
+& \multicolumn{2}{c}{Columns 1–2} & \multicolumn{2}{c}{Columns 3–4}\\
+\cmidrule{2-3}\cmidrule{4-5}
+& Column 1 &  Column 2 &  Column 3  &  Column 4 \\
+\midrule
+Line 1: & $\alpha$& $\beta$& $\gamma$ & $\delta$\\
+Line 2: & $\epsilon$& $\phi$ & $\kappa$ & $\eta$  \\
+Line 3: & $\kappa$& $\nu$& $\pi$ & $\kappa$ \\
+Line 4: & $\psi$& $\mu$& $\nu$ & $\zeta$ \\
+\bottomrule
+\end{tabular*}
+\note{This is a note for the table. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Pellentesque nec justo aliquet, commodo nulla sed, fringilla odio. Nullam non hendrerit nisi. Curabitur et metus vel velit blandit pharetra. Morbi interdum metus a erat bibendum, nec hendrerit eros ultricies. Vestibulum vel arcu id nulla ultricies commodo. Suspendisse potenti.}
+\label{t:table1}\end{table}
+
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.
+
+\section{A multi-panel table}
+
+Table \ref{t:table2} is a more sophisticated table with several panels. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat. 
+
+Suspendisse potenti. Ut venenatis maximus tellus, sit amet mattis lorem finibus nec. Mauris non libero eget ipsum ultricies congue id et eros. Duis nec vehicula nunc. In hac habitasse platea dictumst. Morbi non magna vitae ex fermentum placerat. Quisque eu ultrices velit. Nullam ac odio ac ex tincidunt posuere. Mauris viverra arcu eu metus ultrices, id vestibulum felis posuere.
+
+Fusce eu magna in quam tincidunt placerat. Proin laoreet lacus eget lacinia ullamcorper. Nunc pulvinar, risus quis tempor vestibulum, odio odio fermentum tortor, nec dictum felis libero quis mauris. Vestibulum vel justo a eros efficitur fringilla. Sed at tempus urna. Nulla facilisi. Vivamus sit amet nisl at libero fermentum posuere.
+
+
+\begin{table}[t]
+\caption{Bigger table with several panels}
+\begin{tabular*}{\textwidth}[]{p{2cm}@{\extracolsep\fill}ccccccc}
+\toprule
+    & Column 1 &  Column 2 &  Column 3  &  Column 4 &  Column 5 &  Column 6 &  Column 7 \\
+\midrule
+\multicolumn{8}{l}{A. A first panel with calligraphic letters}\\
+Line 1: & $\mathcal{A}$ & $\mathcal{C}$ & $\mathcal{V}$  & -- & -- & $\mathcal{K}$ & $\mathcal{A}$\\
+Line 2: & $\mathcal{X}$ &  $\mathcal{H}$ & $\mathcal{O}$  & -- & -- & $\mathcal{K}$ & $\mathcal{A}$  \\
+\midrule
+\multicolumn{8}{l}{B. A second panel with capital letters}\\
+Line 3: & U & B & J  & K & A & K & A\\
+Line 4: & N & Y & T  & L & T & K & A\\
+Line 5: & G & S & Q  & P & Q & K & A\\
+\midrule
+\multicolumn{8}{l}{C. A third panel with blackboard-bold letters}\\
+Line 6: & $\mathbb{U}$ & $\mathbb{B}$ & $\mathbb{J}$  & $\mathbb{K}$ & $\mathbb{K}$ & $\mathbb{K}$ & $\mathbb{A}$\\
+Line 7: & $\mathbb{N}$ & $\mathbb{Y}$ & $\mathbb{T}$  & $\mathbb{L}$ & $\mathbb{T}$ & $\mathbb{U}$ & $\mathbb{E}$\\
+Line 8: & $\mathbb{G}$ & $\mathbb{S}$ & $\mathbb{Q}$  & $\mathbb{P}$ & $\mathbb{Q}$ & $\mathbb{K}$ & $\mathbb{P}$\\
+\midrule
+\multicolumn{8}{l}{D. A fourth panel with numbers}\\
+Line 9: & 1.0\% & 2.3\% & 4.5\%  & 9.0\% & 9.8\% & 91.2\% & 0\\
+Line 10: & $\infty$ & 23 & 1 & 90 & 33 & 4.0\% & 0\\
+Line 11: & -- & -- & 1.2  & 4.4 & 0 & 9.0\% & 0\\
+\bottomrule
+\end{tabular*}
+\note[Note]{Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.}
+\label{t:table2}\end{table}
+
+Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae.
+
+Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam erat volutpat. Donec tincidunt, quam sed pellentesque fermentum, lorem dolor consequat lectus, at pulvinar arcu ipsum in ligula. Mauris pretium ipsum id sapien posuere vehicula. Vivamus consectetur, turpis vitae pellentesque molestie, libero odio venenatis mauris, id vestibulum nisl nulla sit amet enim. Integer vitae metus eget risus vulputate consectetur. Suspendisse potenti. Quisque dictum purus non justo aliquet, sed tristique odio dapibus. Sed tincidunt justo vitae leo mattis, a ullamcorper metus vestibulum. Sed ac sapien metus. Sed non mauris nec nisl vehicula iaculis eget eget enim. Suspendisse potenti. Sed ac purus volutpat, venenatis sem eget, fermentum lorem. Suspendisse eu convallis tortor. Nunc vel dictum libero. Cras eleifend, orci non faucibus gravida, sapien quam pharetra ligula, nec tincidunt elit ex at sapien. Curabitur maximus libero id magna bibendum fringilla. Curabitur ultricies dictum justo. Nam efficitur lobortis sapien a tristique. Vivamus vestibulum, sem nec dignissim scelerisque, purus nunc volutpat ligula, vitae aliquam libero orci nec augue. Nullam semper pulvinar turpis eget finibus. Suspendisse potenti. Sed do eiusmod\index{eiusmod} tempor incididunt ut labore et dolore magna aliqua. 
+
+\section{Conclusion: cross-references}
+
+As usual, it is possible to reference an equation, such as equation \eqref{e:cv}. It is also possible to reference a section, such as section \ref{s:graphs}, or a subsection, such as section \ref{s:numberedlists}. It is also possible to reference an appendix, such as appendix \ref{a:appendix1}, or a subsection in an appendix, such as appendix~\ref{a:subappendix}. Of course it is possible to reference figures, such as figure \ref{f:graph2}, or tables, such as table~\ref{t:table1}.

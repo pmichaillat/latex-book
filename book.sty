@@ -1,0 +1,304 @@
+% ---- Select text fonts ----
+
+% Make PDF searchable and copyable
+\input{glyphtounicode}
+\pdfgentounicode=1
+
+% Select font encoding 
+\usepackage[T1]{fontenc}
+
+% Select text font
+\usepackage{sourceserifpro}
+
+% Select monospaced font
+\usepackage{sourcecodepro}
+
+% Select URL font
+\usepackage[hyphens]{url}
+
+% ---- Select math fonts ----
+
+% Select symbol font
+\usepackage{MnSymbol}
+
+% Select calligraphic and blackboard-bold fonts
+\usepackage[cal=euler, bb=fourier]{mathalpha}
+
+% Enable bold math characters
+\newcommand{\hmmax}{0} % Avoid "Too many math alphabets" error
+\newcommand{\bmmax}{0} % Avoid "Too many math alphabets" error
+\usepackage{bm}
+
+% Select font for Roman letters, Greek letters, digits, and punctuation
+\usepackage[italic, eulergreek, nolessnomore, noparenthesis, noplusnominus, noequal, nohbar]{mathastext}
+
+% Correct spacing around certain Roman letters
+\MTsetmathskips{f}{4mu}{0mu}
+\MTsetmathskips{y}{2mu}{0mu}
+\MTsetmathskips{p}{2mu}{0mu}
+\MTsetmathskips{j}{2mu}{0mu}
+
+% ---- Adjust page layout ----
+
+% Customize page dimensions
+\usepackage{geometry}
+
+% Set top margin
+\geometry{top=1in}
+
+% Set bottom margin
+\geometry{bottom=1.2in}
+
+% Set side margins
+\geometry{left=1.3in,right=1.3in}
+
+% Set placement of page number
+\geometry{footskip=0.7in}
+
+% ---- Adjust spacing ----
+
+% Set spacing between lines
+\usepackage[onehalfspacing]{setspace}
+
+% Set spacing on lines
+\usepackage{microtype}
+
+% Set spacing in text
+\AtBeginDocument{\frenchspacing}
+
+% ---- Select color scheme ----
+
+\usepackage[x11names]{xcolor}
+
+% ---- Format header and footer ----
+
+% Customize headers and footers
+\usepackage{fancyhdr}
+
+% Activate custom header and footer
+\pagestyle{fancy}
+
+% Eliminate header line
+\renewcommand{\headrule}{}
+
+% Clear header and footer
+\fancyhf{}
+\fancypagestyle{plain}{\fancyhf{}}
+
+% Place centered page number at foot of regular pages
+\fancyfoot[C]{\thepage}
+\fancypagestyle{plain}{\fancyfoot[C]{\thepage}}
+
+% ---- Format title page ----
+
+% Customize title, author, and date
+\usepackage{titling}
+
+% Format title
+\setlength{\droptitle}{-5cm}
+\pretitle{\begin{center}\bfseries\HUGE} 
+
+% Create subtitle
+\newcommand{\subtitle}[1]{\posttitle{\vskip2cm\par\huge #1\end{center}}}
+
+% Format author
+\preauthor{\begin{center}\huge\vskip4cm\lineskip0.5em\begin{tabular}[t]{c}}
+
+% Format date
+\predate{\begin{center}\huge\vskip2cm}
+
+% --- Format table of contents ---
+
+\usepackage[subfigure]{tocloft}
+\renewcommand{\contentsname}{}
+\setcounter{tocdepth}{1}
+\renewcommand{\cftpartfont}{\bfseries}
+\renewcommand{\cftchapfont}{\scshape}
+\renewcommand{\cftsecfont}{\normalfont}
+\renewcommand{\cftchappagefont}{\normalfont}
+\renewcommand{\cftsecpagefont}{\normalfont}
+\renewcommand{\cftchapdotsep}{\cftnodots}
+\renewcommand{\cftsecdotsep}{10}
+\renewcommand{\cftdotsep}{10}
+\setlength{\cftbeforepartskip}{1em}
+\setlength{\cftbeforechapskip}{1em}
+\setlength{\cftbeforesecskip}{0em}
+\setlength{\cftsecindent}{0em}
+\setlength{\cftchapnumwidth}{3em}
+\setlength{\cftsecnumwidth}{4em}
+
+% ---- Format headings ----
+
+% Customize section headings
+\usepackage{titlesec}
+
+% Format part headings
+\titleformat{\part}[display]{\Huge\bfseries\centering}{\textsc{part}~\thepart.}{2cm}{}[]
+
+% Format chapter headings
+\titleformat{\chapter}[display]{\huge\bfseries}{\textsc{chapter}~\thechapter.}{2cm}{}[\vskip2cm]
+
+% Remove headers/footers from blank pages at the end of parts and chapters
+\usepackage{emptypage}  
+
+% Format section headings
+\titleformat*{\section}{\large\bfseries}
+
+% Format subsection headings
+\titleformat*{\subsection}{\bfseries}
+
+% Format paragraph headings
+\titleformat{\paragraph}[runin]{\itshape}{}{}{}[\@addpunct{.}]
+
+% Add period after heading numbers
+\titlelabel{\thetitle.\quad}
+
+% ---- Format theorems and proofs ----
+
+% Enhance theorem environments
+\usepackage{amsthm}
+
+% Define theorem style
+\newtheoremstyle{paper}{}{}{\itshape}{}{\scshape}{.}{0.5em}{}
+
+% Apply theorem style
+\theoremstyle{paper}
+
+% Define theorems
+\newtheorem{theorem}{theorem}
+\newtheorem{proposition}{proposition}
+\newtheorem{lemma}{lemma}
+\newtheorem{corollary}{corollary}
+\newtheorem{definition}{definition}
+\newtheorem{assumption}{assumption}
+\newtheorem{remark}{remark}
+\newtheorem{result}{result}
+
+% Format proof heading
+\renewcommand{\proofname}{\upshape\scshape proof}
+
+% ---- Format figures and tables ----
+
+% Include graphics
+\usepackage{graphicx}
+
+% Enhance table formatting
+\usepackage{booktabs}
+
+% Enable rotation of tables and figures
+\usepackage{rotating}
+
+% Enable multiple rows in table
+\usepackage{multirow}
+
+% Allow small figures and tables to be on their own page
+\renewcommand{\floatpagefraction}{0}
+
+% Center figures and tables
+\makeatletter\g@addto@macro\@floatboxreset\centering\makeatother 
+
+% Adjust spacing in tables
+\renewcommand{\arraystretch}{1.2}
+
+% Set font size in tables
+\BeforeBeginEnvironment{tabular*}{\footnotesize}
+
+% Write "table" and "figure" in small caps 
+\renewcommand{\tablename}{\textsc{table}}
+\renewcommand{\figurename}{\textsc{figure}}
+
+% Customize captions and subcaptions
+\usepackage{caption,subcaption}
+
+% Format captions
+\captionsetup{labelsep=period}
+
+% Place table captions above table
+\captionsetup[table]{position=top}
+
+% Format subcaptions
+\captionsetup[sub]{labelformat=simple, labelsep=period, size=footnotesize}
+
+% Use capitals for figure sublabels
+\renewcommand{\thesubfigure}{\Alph{subfigure}}
+
+% Define custom commands with complex argument specifications
+\usepackage{xparse}
+
+% Create note for tables and figures
+\NewDocumentCommand{\note}{o g}{%
+\parbox{\textwidth}{\footnotesize\vspace*{10pt}%
+\IfValueT{#1}{\textit{#1}:\hspace*{0.5em}}%
+#2}}
+
+% Define command to insert 4:3 graphic
+\NewDocumentCommand{\normalgraphic}{o g}{%
+\includegraphics[scale=0.2,page=#1]{#2}}
+
+% Define command to insert 16:9 graphic
+\NewDocumentCommand{\widegraphic}{o g}{%
+\includegraphics[scale=0.22,page=#1]{#2}}
+
+% Define command to insert small graphic
+\NewDocumentCommand{\smallgraphic}{o g}{%
+\includegraphics[scale=0.16,page=#1]{#2}}
+
+% Define vertical space for full-page figures
+\newcommand{\fspace}{\\\vspace*{4mm}}
+
+% ---- Format equations ----
+
+% Set tolerance for page breaks in multiline equations
+\AtBeginDocument{\allowdisplaybreaks[1]}
+
+% ---- Format lists ----
+
+% Customize lists
+\usepackage{enumitem}
+
+% Format itemized lists
+\setlist[itemize, 1]{leftmargin=\parindent, label=\color{gray}{\upshape\textbullet}} % First level
+\setlist[itemize, 2]{leftmargin=2\parindent, label=\color{gray}{\upshape\textendash}} % Second level
+
+% Format numbered lists
+\setlist[enumerate, 1]{leftmargin=\parindent, label=\color{gray}{\upshape\alph*.}} % First level
+\setlist[enumerate, 2]{leftmargin=2\parindent, label=\color{gray}{\upshape\roman*.}} % Second level
+
+% ---- Format appendix ----
+
+% Enable advanced programming features
+\usepackage{etoolbox}
+
+% Change chapter name in appendix
+\apptocmd{\appendix}{%
+\titleformat{\chapter}[display]{\huge\bfseries}{\textsc{appendix}~\thechapter.}{2cm}{}[\vskip2cm]
+}{}{}
+
+% ---- Format bibliography ----
+
+% Enhance bibliography
+\usepackage{natbib}
+
+% Eliminate author-year separation in citations
+\setcitestyle{aysep={}}
+
+% Set font size in bibliography
+\renewcommand{\bibfont}{\small}
+
+% Set spacing between references
+\setlength{\bibsep}{0pt}
+
+% Set indentation of references
+\setlength{\bibhang}{\parindent}
+
+% Add bibliography to table of contents
+\AtBeginEnvironment{thebibliography}{\addcontentsline{toc}{chapter}{Bibliography}}
+
+% ---- Build index (comment if index is not required) ----
+
+\usepackage{imakeidx}
+\makeindex[intoc]
+
+% ---- Enable hyperlinks  ----
+
+\usepackage[pdftex, hidelinks, hypertexnames=false, pdfpagemode=UseNone, pdfdisplaydoctitle=true]{hyperref}
