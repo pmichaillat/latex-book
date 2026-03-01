@@ -38,16 +38,9 @@ A few files in the repository are not required to use the book template but are 
 
 This repository is licensed under the [MIT License](LICENSE.md).
 
-## Real-world implementations
-
-- [A Theory of Slack](https://pascalmichaillat.org/18/) – research monograph typeset with this book template.
-
 ## Related resources
 
-This book template is part of a [minimalist design suite](https://pascalmichaillat.org/design/) for academic work.
-
-- [latex-paper](https://github.com/pmichaillat/latex-paper) – LaTeX template for academic papers; same typographic principles and a similar appearance as this book template.
-- [latex-presentation](https://github.com/pmichaillat/latex-presentation) – LaTeX template for academic presentations following the same typographic principles.
-- [latex-math](https://github.com/pmichaillat/latex-math) – LaTeX commands that simplify writing mathematical expressions. They can be used in combination with this book template.
-
-
+- [latex-paper](https://github.com/pmichaillat/latex-paper) – This LaTeX template produces academic papers that follow the same typographic principles as the book template.
+- [latex-presentation](https://github.com/pmichaillat/latex-presentation) – This LaTeX template produces academic presentations that follow the same typographic principles as the book template.
+- [latex-math](https://github.com/pmichaillat/latex-math) – These LaTeX commands simplify writing mathematical expressions. They can be used in combination with this book template.
+- [matlab-figures](https://github.com/pmichaillat/matlab-figures) - This MATLAB template produces minimalist scientific figures that can be inserted into your book.
