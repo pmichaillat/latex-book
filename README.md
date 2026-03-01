@@ -32,7 +32,7 @@ A few files in the repository are not required to use the book template but are 
 ## Software
 
 + The template was developed with TeX Live 2025 on macOS.
-+ Other LaTeX distributions and operating systems may require minor adjustments. Please report any issues to help improve compatibility.
++ Other LaTeX distributions and operating systems may require minor adjustments. Please [report any issues](https://github.com/pmichaillat/latex-book/issues) to help improve compatibility.
 
 ## License
 
@@ -44,8 +44,10 @@ This repository is licensed under the [MIT License](LICENSE.md).
 
 ## Related resources
 
+This book template is part of a [minimalist design suite](https://pascalmichaillat.org/design/) for academic work.
+
 - [latex-paper](https://github.com/pmichaillat/latex-paper) – LaTeX template for academic papers; same typographic principles and a similar appearance as this book template.
 - [latex-presentation](https://github.com/pmichaillat/latex-presentation) – LaTeX template for academic presentations following the same typographic principles.
 - [latex-math](https://github.com/pmichaillat/latex-math) – LaTeX commands that simplify writing mathematical expressions. They can be used in combination with this book template.
 
-This book template is part of a [minimalist design suite](https://pascalmichaillat.org/design/) for academic work (papers, books, CVs, slides, websites, figures, and math).
+
