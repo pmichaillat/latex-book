@@ -1,4 +1,41 @@
-% ---- Define functions  ----
+%%
+%% This is file `book.bst',
+%% originally generated with the docstrip utility.
+%%
+%% The original source files were:
+%%
+%% merlin.mbs  (with options: `ay,nat,nm-revv1,jnrlst,nmlm,x10,x0,m10,m0,mcite,mct-3,mct-x3,dt-beg,yr-per,note-yr,tit-qq,atit-u,vnum-sp,volp-sp,num-xser,ser-ed,jnm-x,add-pub,url-doi,edparxc,edby,pp,abr,ednx,xedn,url,url-blk,nfss,')
+%%
+%% ----------------------------------------
+%%
+%% This file was originally generated from merlin.mbs with docstrip but has been manually modified and is no longer identical to the generated output. 
+%%
+%% Do not overwrite by re-running docstrip without preserving changes.
+%%
+%% ----------------------------------------
+%%
+%% *** Bibliography style file for latex-book ***
+%% 
+%% Copyright 1994-2011 Patrick W Daly
+%% ----------------------------------------
+%% IMPORTANT NOTICE:
+%% This bibliographic style (bst) file has been generated from one or
+%% more master bibliographic style (mbs) files, listed above.
+%%
+%% This generated file can be redistributed and/or modified under the terms
+%% of the LaTeX Project Public License Distributed from CTAN
+%% archives in directory macros/latex/base/lppl.txt; either
+%% version 1 of the License, or any later version.
+%% ----------------------------------------
+%% Name and version information of the main mbs file:
+%% \ProvidesFile{merlin.mbs}[2011/11/18 4.33 (PWD, AO, DPC)]
+%%   For use with BibTeX version 0.99a or later
+%% ----------------------------------------
+%% This bibliography style file is intended for texts in ENGLISH
+%% This is an author-year citation style bibliography. As such, it is
+%% non-standard LaTeX, and requires a special package file to function properly.
+%% Such a package is    natbib.sty   by Patrick W. Daly
+%% ----------------------------------------
 
 ENTRY
   { address
@@ -93,7 +130,7 @@ FUNCTION {new.sentence}
   if$
 }
 FUNCTION {add.blank}
-{   " " * before.all 'output.state :=
+{  " " * before.all 'output.state :=
 }
 
 FUNCTION {date.block}
@@ -156,6 +193,7 @@ FUNCTION {capitalize}
 FUNCTION {space.word}
 { " " swap$ * " " * }
  % Here are the language-specific definitions for explicit words.
+ % Each function has a name bbl.xxx where xxx is the English word.
  % The language selected here is ENGLISH
 FUNCTION {bbl.and}
 { "and"}
@@ -282,7 +320,7 @@ FUNCTION {format.url}
 
 INTEGERS { nameptr namesleft numnames }
 
-STRINGS   { bibinfo}
+STRINGS  { bibinfo}
 
 FUNCTION {format.names}
 { 'bibinfo :=
@@ -921,6 +959,8 @@ FUNCTION {book}
       new.block
       format.number.series output
       new.sentence
+      format.edition output
+      new.sentence
       format.publisher.address output
     }
     {
@@ -928,7 +968,6 @@ FUNCTION {book}
       format.book.crossref output.nonnull
     }
   if$
-  format.edition output
   new.block
   format.url output
   new.block
@@ -975,6 +1014,8 @@ FUNCTION {inbook}
       new.block
       format.number.series output
       new.sentence
+      format.edition output
+      new.sentence
       format.publisher.address output
     }
     {
@@ -983,7 +1024,6 @@ FUNCTION {inbook}
       format.book.crossref output.nonnull
     }
   if$
-  format.edition output
   new.block
   format.url output
   new.block
@@ -1004,8 +1044,9 @@ FUNCTION {incollection}
       format.number.series output
       format.chapter.pages output
       new.sentence
-      format.publisher.address output
       format.edition output
+      new.sentence
+      format.publisher.address output
     }
     { format.incoll.inproc.crossref output.nonnull
       format.chapter.pages output
@@ -1418,8 +1459,6 @@ FUNCTION {presort}
   'sort.key$ :=
 }
 
-% ---- Execute functions  ----
-
 ITERATE {presort}
 SORT
 STRINGS { last.label next.extra }
@@ -1500,7 +1539,7 @@ FUNCTION {begin.bib}
   "\providecommand{\natexlab}[1]{#1}"
   write$ newline$
   "\providecommand{\url}[1]{\texttt{#1}}"
-  write$ newline$ 
+  write$ newline$
 
 }
 EXECUTE {begin.bib}
@@ -1511,3 +1550,6 @@ FUNCTION {end.bib}
   "\end{thebibliography}" write$ newline$
 }
 EXECUTE {end.bib}
+%% End of customized bst file
+%%
+%% End of file `book.bst'.
