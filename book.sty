@@ -159,20 +159,20 @@
 \usepackage{amsthm}
 
 % Define theorem style
-\newtheoremstyle{paper}{}{}{\itshape}{}{\scshape}{.}{0.5em}{}
+\newtheoremstyle{paper}{0.5em}{0.5em}{\itshape}{}{\scshape}{.}{0.5em}{}
 
 % Apply theorem style
 \theoremstyle{paper}
 
 % Define theorems
-\newtheorem{theorem}{theorem}
-\newtheorem{proposition}{proposition}
-\newtheorem{lemma}{lemma}
-\newtheorem{corollary}{corollary}
-\newtheorem{definition}{definition}
-\newtheorem{assumption}{assumption}
-\newtheorem{remark}{remark}
-\newtheorem{result}{result}
+\newtheorem{theorem}{theorem}[chapter]
+\newtheorem{proposition}{proposition}[chapter]
+\newtheorem{lemma}{lemma}[chapter]
+\newtheorem{corollary}{corollary}[chapter]
+\newtheorem{definition}{definition}[chapter]
+\newtheorem{assumption}{assumption}[chapter]
+\newtheorem{remark}{remark}[chapter]
+\newtheorem{result}{result}[chapter]
 
 % Format proof heading
 \renewcommand{\proofname}{\upshape\scshape proof}

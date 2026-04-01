@@ -20,7 +20,7 @@
 \subtitle{How to Use the Book Template}
 
 % Enter author:
-\author{First Author, Second Author}
+\author{Book Author}
 
 % Enter date:
 \date{Month Year}
@@ -29,11 +29,16 @@
 \maketitle
 \end{titlepage}
 
+\frontmatter
+
 \tableofcontents
 
-\chapter*{Preface}
+% Enter book structure
+\chapter{Preface}
 
 \input{preface}
+
+\mainmatter
 
 \part{First half of the book}\label{p:first}
 
@@ -55,7 +60,7 @@
 
 \input{chapter4}
 
-\chapter{Cross-references}\label{c:conclusion}
+\chapter{Cross-references and quotes}\label{c:conclusion}
 
 \input{chapter5}
 
@@ -95,11 +100,11 @@
 
 \backmatter
 
+\bibliography{\bib}
+
 \chapter{Acknowledgments}
 
 \input{acknowledgements}
-
-\bibliography{\bib}
 
 \printindex
 
