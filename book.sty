@@ -174,8 +174,11 @@
 \newtheorem{remark}{remark}[chapter]
 \newtheorem{result}{result}[chapter]
 
-% Format proof heading
-\renewcommand{\proofname}{\upshape\scshape proof}
+% Enable patching and appending to commands
+\usepackage{etoolbox}
+
+% Format proof environment
+\renewenvironment{proof}[1][\proofname]{\par\parskip0pt\pushQED{\qed}\normalfont\topsep0.5em\relax\trivlist\item[\hskip\labelsep\upshape\scshape#1\@addpunct{.}]\ignorespaces}{\popQED\endtrivlist\@endpefalse}
 
 % ---- Format figures and tables ----
 
@@ -257,17 +260,14 @@
 \usepackage{enumitem}
 
 % Format itemized lists
-\setlist[itemize, 1]{leftmargin=\parindent, label=\color{gray}{\upshape\textbullet}} % First level
-\setlist[itemize, 2]{leftmargin=2\parindent, label=\color{gray}{\upshape\textendash}} % Second level
+\setlist[itemize, 1]{leftmargin=\parindent, label=\color{gray}{\upshape\textbullet}, topsep=0.5em, itemsep=0pt} % First level
+\setlist[itemize, 2]{leftmargin=2\parindent, label=\color{gray}{\upshape\textendash}, topsep=0em, itemsep=0pt} % Second level
 
 % Format numbered lists
-\setlist[enumerate, 1]{leftmargin=\parindent, label=\color{gray}{\upshape\alph*.}} % First level
-\setlist[enumerate, 2]{leftmargin=2\parindent, label=\color{gray}{\upshape\roman*.}} % Second level
+\setlist[enumerate, 1]{leftmargin=\parindent, label=\color{gray}{\upshape\arabic*.}, topsep=0.5em, itemsep=0pt} % First level
+\setlist[enumerate, 2]{leftmargin=2\parindent, label=\color{gray}{\upshape\alph*.}, topsep=0em, itemsep=0pt} % Second level
 
 % ---- Format appendix ----
-
-% Enable advanced programming features
-\usepackage{etoolbox}
 
 % Change chapter name in appendix
 \apptocmd{\appendix}{%
