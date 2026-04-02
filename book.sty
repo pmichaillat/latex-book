@@ -13,9 +13,6 @@
 % Select monospaced font
 \usepackage{sourcecodepro}
 
-% Select URL font
-\usepackage[hyphens]{url}
-
 % ---- Select math fonts ----
 
 % Select symbol font
@@ -276,4 +273,5 @@
 
 % ---- Enable hyperlinks  ----
 
+\PassOptionsToPackage{hyphens}{url}
 \usepackage[pdftex, hidelinks, hypertexnames=false, pdfpagemode=UseNone, pdfdisplaydoctitle=true]{hyperref}
