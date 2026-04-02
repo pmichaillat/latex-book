@@ -66,15 +66,9 @@
 % Activate custom header and footer
 \pagestyle{fancy}
 
-% Eliminate header line
+% Eliminate headers
 \renewcommand{\headrulewidth}{0pt}
-
-% Format regular pages
-\fancyhf{}
-\fancyfoot[C]{\thepage}
-
-% Format title pages
-\fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}}
+\fancyhead{}
 
 % Remove headers/footers from blank pages
 \usepackage{emptypage}  
