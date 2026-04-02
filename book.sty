@@ -69,12 +69,15 @@
 % Eliminate header line
 \renewcommand{\headrulewidth}{0pt}
 
-% Place centered page number at foot of fancy pages and clear everything else
+% Format regular pages
 \fancyhf{}
 \fancyfoot[C]{\thepage}
 
-% Place centered page number at foot of plain pages and clear everything else
+% Format title pages
 \fancypagestyle{plain}{\fancyhf{}\fancyfoot[C]{\thepage}}
+
+% Remove headers/footers from blank pages
+\usepackage{emptypage}  
 
 % ---- Format title page ----
 
@@ -96,21 +99,39 @@
 
 % --- Format table of contents ---
 
+% Customize table of contents
 \usepackage{tocloft}
+
+% Remove "Table of contents"
 \renewcommand{\contentsname}{}
+
+% Include only parts, chapters, and sections
 \setcounter{tocdepth}{1}
+
+% Set entry fonts
 \renewcommand{\cftpartfont}{\bfseries}
 \renewcommand{\cftchapfont}{\scshape}
 \renewcommand{\cftsecfont}{\normalfont}
+
+% Set page fonts
 \renewcommand{\cftchappagefont}{\normalfont}
 \renewcommand{\cftsecpagefont}{\normalfont}
+
+% Remove dots for chapters
 \renewcommand{\cftchapdotsep}{\cftnodots}
-\renewcommand{\cftsecdotsep}{10}
+
+% Set spacing for dots
 \renewcommand{\cftdotsep}{10}
+
+% Set vertical spaces
 \setlength{\cftbeforepartskip}{1em}
 \setlength{\cftbeforechapskip}{1em}
 \setlength{\cftbeforesecskip}{0em}
+
+% Align all numbers
 \setlength{\cftsecindent}{0em}
+
+% Set entry indentations
 \setlength{\cftchapnumwidth}{3em}
 \setlength{\cftsecnumwidth}{4em}
 
@@ -124,9 +145,6 @@
 
 % Format chapter headings
 \titleformat{\chapter}[display]{\huge\bfseries}{\textsc{chapter}~\thechapter.}{2cm}{}[\vskip2cm]
-
-% Remove headers/footers from blank pages at the end of parts and chapters
-\usepackage{emptypage}  
 
 % Format section headings
 \titleformat*{\section}{\large\bfseries}
@@ -200,7 +218,7 @@
 % Customize captions and subcaptions
 \usepackage{caption,subcaption}
 
-% Define label separator: period + 1em horizontal space
+% Format label separator
 \DeclareCaptionLabelSeparator{periodem}{.\hspace{1em}}
 
 % Format captions
