@@ -19,15 +19,15 @@
 \usepackage{MnSymbol}
 
 % Select calligraphic and blackboard-bold fonts
-\usepackage[cal=euler, bb=fourier]{mathalpha}
+\usepackage[cal=euler,  bb=fourier]{mathalpha}
 
 % Enable bold math characters
 \newcommand{\hmmax}{0} % Avoid "Too many math alphabets" error
 \newcommand{\bmmax}{0} % Avoid "Too many math alphabets" error
 \usepackage{bm}
 
-% Select font for Roman letters, Greek letters, digits, and punctuation
-\usepackage[italic, eulergreek, nolessnomore, noparenthesis, noplusnominus, noequal, nohbar]{mathastext}
+% Select font for Roman letters,  Greek letters,  digits,  and punctuation
+\usepackage[italic,  eulergreek,  nolessnomore,  noparenthesis,  noplusnominus,  noequal,  nohbar]{mathastext}
 
 % Correct spacing around certain Roman letters
 \MTsetmathskips{f}{4mu}{0mu}
@@ -37,11 +37,7 @@
 
 % ---- Adjust page layout ----
 
-% Customize page dimensions
-\usepackage{geometry}
-
-% Set all margins and place page number
-\geometry{top=1in, left=1.3in, right=1.3in, bottom=1.2in, footskip=0.7in}
+\usepackage[top=1in,  left=1.3in,  right=1.3in,  bottom=1.2in,  footskip=0.7in]{geometry}
 
 % ---- Adjust spacing ----
 
@@ -75,7 +71,7 @@
 
 % ---- Format title page ----
 
-% Customize title, author, and date
+% Customize title,  author,  and date
 \usepackage{titling}
 
 % Format title
@@ -99,7 +95,7 @@
 % Remove "Table of contents"
 \renewcommand{\contentsname}{}
 
-% Include only parts, chapters, and sections
+% Include only parts,  chapters,  and sections
 \setcounter{tocdepth}{1}
 
 % Set entry fonts
@@ -209,8 +205,8 @@
 \renewcommand{\tablename}{\textsc{table}}
 \renewcommand{\figurename}{\textsc{figure}}
 
-% Customize captions and subcaptions
-\usepackage{caption,subcaption}
+% Customize captions
+\usepackage{caption, subcaption}
 
 % Format label separator
 \DeclareCaptionLabelSeparator{periodem}{.\hspace{1em}}
