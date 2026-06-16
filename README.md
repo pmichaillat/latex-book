@@ -36,6 +36,10 @@ The file `book.pdf` illustrates the output of the template. It will be overwritt
 
 This repository is licensed under the [MIT License](LICENSE.md).
 
+## Real-world implementation
+
+- [A Theory of Economic Slack](https://pascalmichaillat.org/18.pdf) (by P. Michaillat)
+
 ## Related resources
 
 - [latex-paper](https://github.com/pmichaillat/latex-paper) – This LaTeX template produces academic papers that follow the same typographic principles as the book template.
