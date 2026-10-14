@@ -6,9 +6,9 @@ This repository contains a [LaTeX](https://github.com/latex3/latex2e) template t
 
 The template is documented at https://pascalmichaillat.org/g/.
 
-## Illustration
+## Preview
 
-+ The book produced by the template can be viewed at https://pascalmichaillat.org/g.pdf.
+The book produced by the template can be viewed at https://pascalmichaillat.org/g.pdf.
 
 ## Usage
 
