@@ -38,7 +38,7 @@ This repository is licensed under the [MIT License](LICENSE.md).
 
 ## Real-world implementation
 
-- [A Theory of Economic Slack](https://pascalmichaillat.org/18.pdf) (by P. Michaillat)
+- [A Theory of Economic Slack](https://pascalmichaillat.org/18/) (by P. Michaillat)
 
 ## Related resources
 
